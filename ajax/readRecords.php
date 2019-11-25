@@ -13,7 +13,7 @@
 	$query = "SELECT * FROM users";									
 
 	if (!$result = mysqli_query($con, $query)) {					
-        exit(mysqli_error($con
+        exit(mysqli_error($con));
     }
 	
 	if(mysqli_num_rows($result) > 0){								
