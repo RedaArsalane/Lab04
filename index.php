@@ -17,6 +17,13 @@
         </div>
     </div>
 	
+	<div class="row">
+        <div class="col-md-12">
+            <div class="pull-right">
+                <button class="btn btn-success" data-toggle="modal" data-target="#add_new_record_modal">Add </button>
+            </div>
+        </div>
+    </div>
 	
 	<div class="row">
         <div class="col-md-12">
@@ -27,4 +34,5 @@
     </div>
 
 </div>
+	
 	
