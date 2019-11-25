@@ -16,5 +16,23 @@
         exit(mysqli_error($con
     }
 	
+	if(mysqli_num_rows($result) > 0){								
+    	$number = 1;
+    	while($row = mysqli_fetch_assoc($result)){					
+    		$data .= '<tr>
+				<td>'.$number.'</td>
+				<td>'.$row['first_name'].'</td>
+				<td>'.$row['last_name'].'</td>
+				<td>'.$row['email'].'</td>
+			</tr>';
+    		$number++;
+    	}
+    }else{															
+    	$data .= '<tr><td colspan="6">Records not found!</td></tr>';
+    }
+
+    $data .= '</table>';											
+
+    echo $data;	
 							
 ?>
