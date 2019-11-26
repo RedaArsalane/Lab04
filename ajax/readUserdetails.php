@@ -19,5 +19,10 @@ if(isset($_POST['id']) && isset($_POST['id']) != ""){
     }
     echo json_encode($response);                            
     }
+    else{                                                      
+    $response['status'] = 200;                              
+    $response['message'] = "Invalid Request!";
+
+    }
 
 ?>
